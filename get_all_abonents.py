@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from api_class import Api
+#Получаем всех абонентов из биллинга и выводим их имена
 #Зададим метод и парамерты для метода
 params = {
           'method1': 'objects.filter',
