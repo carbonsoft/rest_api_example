@@ -11,6 +11,8 @@ class Api(object):
     def call_api(self, model, params):
         encoded_params = urllib.urlencode(params)
         api_url = "{0}/rest_api/v2/{1}/".format(self.srv_address, model)
+        print(api_url)
+        print('pamams: {0}'.format(encoded_params))
         req = urllib2.Request(api_url, encoded_params)
         response = urllib2.urlopen(req)
         result = response.read()
